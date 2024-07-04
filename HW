@@ -1,0 +1,42 @@
+Is it a triangle
+
+def triangleTest(a, b, c):
+    sides = sorted([a, b, c])
+    return sides[0] + sides[1] > sides[2]
+
+greetings
+
+def goodMorning(name):
+    print(f"Good morning, {name}!")
+
+def goodAfternoon(name):
+    print(f"Good afternoon, {name}!")
+
+def goodEvening(name):
+    print(f"Good evening, {name}!")
+
+name = input("What’s your name: ").strip()
+time = input("What time is it: ").strip()
+
+hour = int(time.split(":")[0])
+
+if 0 <= hour <= 12:
+    goodMorning(name)
+elif 13 <= hour <= 17:
+    goodAfternoon(name)
+elif 18 <= hour <= 23:
+    goodEvening(name)
+else:
+    print("Invalid time input.")
+
+Even numbers
+
+def getEven(numbers):
+    even_numbers = []
+    for i in numbers:
+        if i % 2 == 0:
+            even_numbers.append(i)
+    return even_numbers
+
+
+
